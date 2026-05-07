@@ -15,122 +15,217 @@
 box-sizing:border-box !important;
 }
 
+html{
+scroll-behavior:smooth !important;
+}
+
 body{
 margin:0 !important;
 padding:0 !important;
-background:#f5f1ea !important;
 font-family:Arial,sans-serif !important;
-color:#222 !important;
+background:#e8dcc9 !important;
+background-image:
+linear-gradient(rgba(255,255,255,.18), rgba(255,255,255,.18)),
+radial-gradient(circle at top left,#f7efe3 0%,transparent 30%),
+radial-gradient(circle at bottom right,#d9c2a3 0%,transparent 35%) !important;
+color:#2d241c !important;
 line-height:1.6 !important;
 }
 
 .container{
-max-width:1200px !important;
+max-width:1280px !important;
 margin:auto !important;
-padding:20px !important;
+padding:30px 20px 80px !important;
 }
 
 .hero{
-padding:70px 20px !important;
 text-align:center !important;
+padding:80px 20px 60px !important;
+}
+
+.hero-badge{
+display:inline-block !important;
+background:#fff4e4 !important;
+padding:10px 18px !important;
+border-radius:999px !important;
+font-size:14px !important;
+font-weight:700 !important;
+letter-spacing:.5px !important;
+margin-bottom:25px !important;
+box-shadow:0 5px 15px rgba(0,0,0,.06) !important;
 }
 
 .hero h1{
-font-size:54px !important;
-line-height:1.1 !important;
-margin-bottom:20px !important;
+font-size:64px !important;
+line-height:1.05 !important;
+margin:0 auto 24px !important;
+max-width:900px !important;
 font-weight:900 !important;
+letter-spacing:-2px !important;
 }
 
 .hero p{
-font-size:22px !important;
-color:#666 !important;
-max-width:800px !important;
+max-width:760px !important;
 margin:auto !important;
+font-size:22px !important;
+color:#5e5146 !important;
 }
 
 .disclosure{
-background:#fff3cd !important;
-padding:16px !important;
-border-radius:14px !important;
-margin-bottom:50px !important;
+background:#fff6ea !important;
+border:2px solid rgba(0,0,0,.05) !important;
+padding:18px !important;
+border-radius:18px !important;
 font-size:14px !important;
 text-align:center !important;
+margin:0 auto 50px !important;
+max-width:850px !important;
+box-shadow:0 10px 25px rgba(0,0,0,.04) !important;
+}
+
+.section{
+margin-top:85px !important;
+}
+
+.section-header{
+display:flex !important;
+align-items:center !important;
+justify-content:space-between !important;
+margin-bottom:30px !important;
+gap:20px !important;
+flex-wrap:wrap !important;
 }
 
 .section-title{
-font-size:38px !important;
-margin-top:70px !important;
-margin-bottom:30px !important;
-font-weight:800 !important;
+font-size:42px !important;
+font-weight:900 !important;
+margin:0 !important;
+letter-spacing:-1px !important;
+}
+
+.section-subtitle{
+color:#6d5c4f !important;
+font-size:17px !important;
+max-width:500px !important;
 }
 
 .grid{
 display:grid !important;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) !important;
-gap:28px !important;
+gap:30px !important;
 }
 
 .card{
-background:#fff !important;
-border-radius:24px !important;
+background:#fffaf3 !important;
+border-radius:28px !important;
 overflow:hidden !important;
-box-shadow:0 8px 30px rgba(0,0,0,.08) !important;
-transition:.3s !important;
+box-shadow:
+0 10px 30px rgba(0,0,0,.07),
+0 2px 10px rgba(0,0,0,.04) !important;
+transition:.3s ease !important;
+border:1px solid rgba(255,255,255,.6) !important;
+position:relative !important;
 }
 
 .card:hover{
 transform:translateY(-6px) !important;
+box-shadow:
+0 18px 45px rgba(0,0,0,.12),
+0 5px 15px rgba(0,0,0,.05) !important;
+}
+
+.image-placeholder{
+height:320px !important;
+background:
+linear-gradient(135deg,#f3e3cd,#e3c9a9) !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+font-size:18px !important;
+font-weight:700 !important;
+color:#7b6146 !important;
+padding:20px !important;
+text-align:center !important;
 }
 
 .card-content{
-padding:25px !important;
+padding:28px !important;
+}
+
+.category-pill{
+display:inline-block !important;
+background:#f4e1c9 !important;
+color:#7d5c3d !important;
+padding:8px 14px !important;
+border-radius:999px !important;
+font-size:12px !important;
+font-weight:800 !important;
+letter-spacing:.8px !important;
+margin-bottom:18px !important;
+text-transform:uppercase !important;
 }
 
 .product-title{
-font-size:28px !important;
-font-weight:800 !important;
-margin-bottom:12px !important;
-line-height:1.2 !important;
+font-size:30px !important;
+line-height:1.15 !important;
+font-weight:900 !important;
+margin-bottom:14px !important;
 }
 
 .product-description{
 font-size:17px !important;
-color:#555 !important;
-margin-bottom:22px !important;
+color:#66574a !important;
+margin-bottom:24px !important;
 }
 
 .buy-button{
 display:inline-block !important;
-background:#ff9900 !important;
-color:#fff !important;
-padding:15px 24px !important;
-border-radius:14px !important;
+background:#b97932 !important;
+color:white !important;
+padding:15px 26px !important;
+border-radius:16px !important;
 text-decoration:none !important;
-font-weight:bold !important;
-font-size:16px !important;
+font-weight:800 !important;
+font-size:15px !important;
+letter-spacing:.3px !important;
+transition:.2s !important;
+box-shadow:0 8px 18px rgba(185,121,50,.25) !important;
 }
 
 .buy-button:hover{
-background:#e68900 !important;
+background:#9f6527 !important;
+transform:scale(1.02) !important;
 }
 
 footer{
-margin-top:80px !important;
-padding:40px 0 !important;
+margin-top:90px !important;
+padding-top:40px !important;
+border-top:1px solid rgba(0,0,0,.08) !important;
 text-align:center !important;
-color:#777 !important;
 font-size:14px !important;
+color:#6b5b4d !important;
 }
 
 @media(max-width:768px){
 
+.hero{
+padding-top:50px !important;
+}
+
 .hero h1{
-font-size:38px !important;
+font-size:42px !important;
+}
+
+.hero p{
+font-size:18px !important;
 }
 
 .section-title{
-font-size:30px !important;
+font-size:32px !important;
+}
+
+.image-placeholder{
+height:260px !important;
 }
 
 }
@@ -145,11 +240,17 @@ font-size:30px !important;
 
 <div class="hero">
 
-<h1>50 Viral Amazon Gifts Everyone Is Obsessed With in 2026</h1>
+<div class="hero-badge">
+TRENDING AMAZON GIFT GUIDE • 2026
+</div>
+
+<h1>
+50 Viral Amazon Gifts Everyone Is Obsessed With
+</h1>
 
 <p>
-From TikTok-famous gadgets to cozy home upgrades and genius kitchen finds —
-these are the Amazon gifts people are actually buying right now.
+From TikTok-famous gadgets to cozy home upgrades and genius finds people actually use —
+these are the Amazon gifts everyone keeps buying right now.
 </p>
 
 </div>
@@ -158,7 +259,23 @@ these are the Amazon gifts people are actually buying right now.
 As an Amazon Associate I earn from qualifying purchases. This article contains affiliate links.
 </div>
 
-<h2 class="section-title">🔥 Viral TikTok Gifts</h2>
+<!-- SECTION -->
+
+<div class="section">
+
+<div class="section-header">
+
+<div>
+<h2 class="section-title">
+🔥 Viral TikTok Gifts
+</h2>
+
+<div class="section-subtitle">
+The internet-famous Amazon products people genuinely keep rebuying, gifting, and talking about.
+</div>
+</div>
+
+</div>
 
 <div class="grid">
 
@@ -166,16 +283,22 @@ As an Amazon Associate I earn from qualifying purchases. This article contains a
 
 <div class="card">
 
-<!-- AMAZON_EMBED_HERE -->
+<div class="image-placeholder">
+PASTE AMAZON SITESTRIPE IMAGE EMBED HERE
+</div>
 
 <div class="card-content">
+
+<div class="category-pill">
+Trending
+</div>
 
 <div class="product-title">
 Stanley Quencher H2.0 Tumbler
 </div>
 
 <div class="product-description">
-Still one of the most gifted and searched Amazon products online. Huge color selection, keeps drinks cold forever, and genuinely useful.
+Still one of the most wanted gifts online. Keeps drinks cold forever and comes in endless aesthetic colors.
 </div>
 
 <a class="buy-button"
@@ -193,16 +316,22 @@ Check Availability
 
 <div class="card">
 
-<!-- AMAZON_EMBED_HERE -->
+<div class="image-placeholder">
+PASTE AMAZON SITESTRIPE IMAGE EMBED HERE
+</div>
 
 <div class="card-content">
+
+<div class="category-pill">
+TikTok Favorite
+</div>
 
 <div class="product-title">
 Ninja Creami
 </div>
 
 <div class="product-description">
-People are obsessed with making protein ice cream, milkshakes, and healthy desserts at home. Viral for a reason.
+Perfect for homemade protein ice cream, milkshakes, and healthy desserts people obsess over.
 </div>
 
 <a class="buy-button"
@@ -220,16 +349,22 @@ Check Availability
 
 <div class="card">
 
-<!-- AMAZON_EMBED_HERE -->
+<div class="image-placeholder">
+PASTE AMAZON SITESTRIPE IMAGE EMBED HERE
+</div>
 
 <div class="card-content">
+
+<div class="category-pill">
+Viral Find
+</div>
 
 <div class="product-title">
 Owala FreeSip Water Bottle
 </div>
 
 <div class="product-description">
-One of the fastest-growing water bottle trends online. The sip/straw combo makes it surprisingly addictive to use.
+The water bottle that exploded on TikTok because of its genius sip-and-straw design.
 </div>
 
 <a class="buy-button"
@@ -244,23 +379,46 @@ Check Availability
 </div>
 
 </div>
+</div>
 
-<h2 class="section-title">🏡 Cozy Home Gifts</h2>
+<!-- SECTION -->
+
+<div class="section">
+
+<div class="section-header">
+
+<div>
+<h2 class="section-title">
+🏡 Cozy Home Gifts
+</h2>
+
+<div class="section-subtitle">
+Warm, aesthetic, comfort-focused finds that make homes feel more relaxing and expensive.
+</div>
+</div>
+
+</div>
 
 <div class="grid">
 
 <div class="card">
 
-<!-- AMAZON_EMBED_HERE -->
+<div class="image-placeholder">
+PASTE AMAZON SITESTRIPE IMAGE EMBED HERE
+</div>
 
 <div class="card-content">
+
+<div class="category-pill">
+Cozy Living
+</div>
 
 <div class="product-title">
 Weighted Blanket
 </div>
 
 <div class="product-description">
-One of those gifts people end up using every single day. Cozy, calming, and universally loved.
+Comforting, cozy, and one of the most universally loved home gifts online.
 </div>
 
 <a class="buy-button"
@@ -276,16 +434,22 @@ Check Availability
 
 <div class="card">
 
-<!-- AMAZON_EMBED_HERE -->
+<div class="image-placeholder">
+PASTE AMAZON SITESTRIPE IMAGE EMBED HERE
+</div>
 
 <div class="card-content">
+
+<div class="category-pill">
+Pinterest Favorite
+</div>
 
 <div class="product-title">
 Electric Candle Warmer Lamp
 </div>
 
 <div class="product-description">
-This aesthetic home trend exploded on TikTok and Pinterest. Makes any room instantly feel expensive and cozy.
+Aesthetic home décor that Pinterest users are obsessed with right now.
 </div>
 
 <a class="buy-button"
@@ -299,11 +463,43 @@ Check Availability
 </div>
 </div>
 
+<div class="card">
+
+<div class="image-placeholder">
+PASTE AMAZON SITESTRIPE IMAGE EMBED HERE
+</div>
+
+<div class="card-content">
+
+<div class="category-pill">
+Luxury Feel
+</div>
+
+<div class="product-title">
+Silk Pillowcase
+</div>
+
+<div class="product-description">
+A small luxury gift people end up loving for sleep, skincare, and hair care.
+</div>
+
+<a class="buy-button"
+href="https://www.amazon.com/s?k=silk+pillowcase&tag=acutedealsynd-20"
+target="_blank">
+
+Check Availability
+
+</a>
+
+</div>
+</div>
+
+</div>
 </div>
 
 <footer>
 
-© 2026 Gift Guide | Amazon Associate Disclosure Included
+© 2026 Viral Amazon Gift Guide • Built for Pinterest Traffic
 
 </footer>
 
