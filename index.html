@@ -1,296 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>25 Viral Amazon Gifts Everyone Is Obsessed With in 2026</title>
+<title>25 Viral Amazon Finds Everyone Is Obsessed With in 2026</title>
+<meta name="description" content="25 viral Amazon picks people are actually buying right now — TikTok gadgets, cozy home finds, beauty tools, and everyday must-haves.">
 
-<meta name="description" content="25 viral Amazon gifts people are actually buying in 2026 — TikTok gadgets, cozy home finds, beauty tools, and trending must-haves.">
-
-<meta property="og:title" content="25 Viral Amazon Gifts Everyone Is Obsessed With (2026)">
+<!-- Pinterest / Open Graph -->
+<meta property="og:title" content="25 Viral Amazon Finds Everyone Is Obsessed With (2026)">
 <meta property="og:description" content="TikTok-famous, cozy home, tech, and beauty Amazon products people actually buy right now.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="hero.jpg">
+
+<!-- Pinterest Rich Pin -->
+<meta name="pinterest-rich-pin" content="true">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+  :root {
+    --cream:    #f5ede0;
+    --cream-dk: #ede0cf;
+    --card-bg:  #fdf8f2;
+    --brown:    #3b2a1a;
+    --brown-mid:#6b4c30;
+    --warm:     #c07a3a;
+    --warm-lt:  #e8a96a;
+    --tag-bg:   #f0dfc8;
+    --muted:    #7a5c42;
+    --shadow:   rgba(60,35,10,0.10);
+  }
 
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#e8dcc9;
-color:#2d241c;
-}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-.container{
-max-width:1200px;
-margin:auto;
-padding:30px 20px 80px;
-}
+  body {
+    background-color: var(--cream);
+    color: var(--brown);
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
 
-.hero{
-text-align:center;
-padding:60px 20px;
-}
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--cream-dk);
+  }
 
-.hero h1{
-font-size:44px;
-margin:0;
-font-weight:900;
-}
+  /* Hero placeholder — swap src here when your image is ready */
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.55;
+    display: none; /* shown automatically once src is set */
+  }
+  .hero-img[src]:not([src=""]) { display: block; }
 
-.hero p{
-max-width:800px;
-margin:15px auto 0;
-font-size:18px;
-color:#5e5146;
-}
+  /* Shown only when no image */
+  .hero-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--brown-mid);
+    pointer-events: none;
+  }
+  .hero-placeholder svg { opacity: 0.35; }
+  .hero-placeholder span { font-size: 13px; font-weight: 500; opacity: 0.5; letter-spacing: .03em; }
+  /* Hide placeholder when image is present */
+  .hero-img[src]:not([src=""]) ~ .hero-placeholder { display: none; }
 
-.section{
-margin-top:50px;
-}
+  .hero-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 60px 24px 56px;
+    max-width: 720px;
+  }
 
-.section-title{
-font-size:28px;
-font-weight:900;
-margin-bottom:20px;
-}
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--warm);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:18px;
-}
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 56px);
+    font-weight: 900;
+    line-height: 1.15;
+    color: var(--brown);
+  }
 
-.card{
-background:#fffaf3;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
+  .hero-sub {
+    margin-top: 16px;
+    font-size: 16px;
+    color: var(--brown-mid);
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
 
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-display:block;
-}
+  /* ── DISCLOSURE ── */
+  .disclosure {
+    background: var(--tag-bg);
+    text-align: center;
+    padding: 14px 24px;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .disclosure a { color: var(--warm); text-decoration: underline; }
 
-.content{
-padding:14px;
-}
+  /* ── MAIN LAYOUT ── */
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
 
-.tag{
-display:inline-block;
-background:#f4e1c9;
-padding:5px 10px;
-border-radius:999px;
-font-size:11px;
-font-weight:800;
-margin-bottom:8px;
-}
+  /* ── SECTION ── */
+  .section { margin-bottom: 60px; }
 
-.title{
-font-size:18px;
-font-weight:900;
-margin:6px 0;
-}
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--cream-dk);
+    padding-bottom: 14px;
+  }
 
-.desc{
-font-size:13px;
-color:#5f5146;
-margin-bottom:10px;
-}
+  .section-icon { font-size: 26px; }
 
-.button{
-display:inline-block;
-background:#b97932;
-color:white;
-padding:10px 14px;
-border-radius:10px;
-text-decoration:none;
-font-weight:700;
-font-size:12px;
-}
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 3.5vw, 30px);
+    font-weight: 700;
+    color: var(--brown);
+  }
 
-footer{
-text-align:center;
-margin-top:60px;
-font-size:13px;
-color:#6b5b4d;
-}
+  /* ── GRID ── */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
 
+  /* ── CARD ── */
+  .card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 22px var(--shadow);
+    transition: transform .22s ease, box-shadow .22s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(60,35,10,0.14);
+  }
+
+  .card-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: var(--cream-dk);
+    overflow: hidden;
+  }
+  .card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .35s ease;
+  }
+  .card:hover .card-img-wrap img { transform: scale(1.04); }
+
+  /* fallback for broken images */
+  .card-img-wrap img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--cream-dk);
+  }
+
+  .card-body {
+    padding: 16px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--warm);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+    width: fit-content;
+  }
+
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    color: var(--brown);
+  }
+
+  .card-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.55;
+    flex: 1;
+    margin-bottom: 16px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--warm);
+    color: #fff;
+    padding: 11px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    transition: background .18s, transform .15s;
+    text-align: center;
+  }
+  .btn:hover {
+    background: #a8662a;
+    transform: scale(1.02);
+  }
+  .btn::after { content: " →"; }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--cream-dk);
+    padding: 40px 24px;
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  footer a { color: var(--warm); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+    .hero { min-height: 320px; }
+  }
 </style>
-
 </head>
-
 <body>
 
+<!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+<section class="hero">
+  <!--
+    ┌─────────────────────────────────────────────────────────────────────────┐
+    │  ADD YOUR HERO IMAGE                                                    │
+    │  Replace the src="" below with your image filename or full URL.        │
+    │  Example: src="my-flat-lay.jpg"  or  src="https://example.com/img.jpg" │
+    │  Recommended size: 1400 × 600 px minimum, aspect ratio ~3:1            │
+    └─────────────────────────────────────────────────────────────────────────┘
+  -->
+  <img class="hero-img" src="" alt="Viral Amazon Gift Guide">
+
+  <!-- Placeholder shown until image is added — remove this block when done -->
+  <div class="hero-placeholder">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+      <polyline points="21 15 16 10 5 21"/>
+    </svg>
+    <span>Add your hero image above</span>
+  </div>
+
+  <div class="hero-overlay">
+    <span class="hero-eyebrow">2026 Picks · Amazon Favorites</span>
+    <h1>25 Viral Amazon Finds<br>Everyone Is Obsessed With</h1>
+    <p class="hero-sub">TikTok gadgets, cozy home upgrades, beauty tools, and everyday essentials — curated picks people are actually buying right now.</p>
+  </div>
+</section>
+
+<!-- ─── DISCLOSURE ─── -->
+<div class="disclosure">
+  This page contains affiliate links. As an Amazon Associate I earn from qualifying purchases — at no extra cost to you.
+  <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088" target="_blank" rel="nofollow noopener">Learn more</a>.
+</div>
+
+<!-- ═══════════════════════════════════ CONTENT ═══════════════════════════════════ -->
 <div class="container">
 
-<div class="hero">
-<h1>25 Viral Amazon Gifts Everyone Is Obsessed With</h1>
-<p>TikTok gadgets, cozy home upgrades, beauty tools, and everyday essentials people actually buy.</p>
-</div>
 
-<!-- 1 -->
-<div class="section">
-<div class="section-title">🔥 Viral TikTok Favorites</div>
-<div class="grid">
+  <!-- ──── 1. VIRAL / TIKTOK ──── -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-icon">🔥</span>
+      <h2 class="section-title">Viral TikTok Favorites</h2>
+    </div>
+    <div class="grid">
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Viral</div>
-<div class="title">Stanley Quencher 40oz</div>
-<div class="desc">The internet’s most iconic tumbler.</div>
-<a class="button" href="https://www.amazon.com/dp/B0B6G5KQZ8/?tag=acutedealsynd-20" target="_blank">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg" alt="Stanley Quencher 40oz Tumbler" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Viral</span>
+          <div class="card-title">Stanley Quencher 40oz</div>
+          <p class="card-desc">The internet's most iconic tumbler. Keeps drinks cold for hours and fits most car cup holders. Millions sold.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0BY4W8BL8/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/61Z3g1k6ZSL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">TikTok</div>
-<div class="title">Owala FreeSip Bottle</div>
-<div class="desc">Sip + straw hybrid design trend.</div>
-<a class="button" href="https://www.amazon.com/dp/B085DTZQNZ/?tag=acutedealsynd-20" target="_blank">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61Z3g1k6ZSL._AC_SL1500_.jpg" alt="Owala FreeSip Bottle" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">TikTok</span>
+          <div class="card-title">Owala FreeSip Bottle</div>
+          <p class="card-desc">The dual-opening sip-and-straw design that's taken over every feed. Leak-proof, BPA-free, endlessly aesthetic.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B085DTZQNZ/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/71YzG2kQxCL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Food</div>
-<div class="title">Ninja Creami</div>
-<div class="desc">Viral protein ice cream maker.</div>
-<a class="button" href="https://www.amazon.com/dp/B09X6LJ7Q7/?tag=acutedealsynd-20" target="_blank">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71YzG2kQxCL._AC_SL1500_.jpg" alt="Ninja Creami" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Kitchen</span>
+          <div class="card-title">Ninja Creami</div>
+          <p class="card-desc">Make viral high-protein ice cream at home in minutes. Every healthy-eating creator has one — now you will too.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B08QXB9BH5/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71aKF9hBqkL._AC_SL1500_.jpg" alt="Revlon One-Step Volumizer" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Beauty</span>
+          <div class="card-title">Revlon One-Step Volumizer</div>
+          <p class="card-desc">Salon blowout in 10 minutes flat. One of Amazon's all-time best-sellers with 300k+ 5-star reviews.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B01LSUQSB0/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<!-- 2 -->
-<div class="section">
-<div class="section-title">🏡 Cozy Home Favorites</div>
-<div class="grid">
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61S4TWZN4KL._AC_SL1500_.jpg" alt="Dyson Airwrap" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Luxury</span>
+          <div class="card-title">Dyson Airwrap Multi-Styler</div>
+          <p class="card-desc">The holy grail hair tool. Curls, waves, dries, and smooths — all without heat damage. A forever investment piece.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0F96LDS27/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/71c1fZ0QyOL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Cozy</div>
-<div class="title">Weighted Blanket</div>
-<div class="desc">Deep sleep comfort essential.</div>
-<a class="button" href="https://www.amazon.com/dp/B01LZ8Z8F2/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+    </div>
+  </section>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/71Q3k2qQXCL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Aesthetic</div>
-<div class="title">Candle Warmer Lamp</div>
-<div class="desc">Pinterest cozy lighting trend.</div>
-<a class="button" href="https://www.amazon.com/dp/B09JZ5R2T1/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/61Zr9ZQqQHL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Home</div>
-<div class="title">Himalayan Salt Lamp</div>
-<div class="desc">Warm ambient glow decor.</div>
-<a class="button" href="https://www.amazon.com/dp/B00A7E8T6A/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+  <!-- ──── 2. COZY HOME ──── -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-icon">🏡</span>
+      <h2 class="section-title">Cozy Home Favorites</h2>
+    </div>
+    <div class="grid">
 
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71c1fZ0QyOL._AC_SL1500_.jpg" alt="Weighted Blanket" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Sleep</span>
+          <div class="card-title">Weighted Blanket</div>
+          <p class="card-desc">Deeply calming, therapeutic-grade weight that helps you fall asleep faster and stay asleep longer.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B073429DV2/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<!-- 3 -->
-<div class="section">
-<div class="section-title">📱 Tech Essentials</div>
-<div class="grid">
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71Q3k2qQXCL._AC_SL1500_.jpg" alt="Candle Warmer Lamp" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Aesthetic</span>
+          <div class="card-title">Candle Warmer Lamp</div>
+          <p class="card-desc">Melts candles from above — no flame, all the scent. The Pinterest cozy-home staple you didn't know you needed.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0BWJRJYS7/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/61bhAJr7KfL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Tech</div>
-<div class="title">AirPods Pro 2</div>
-<div class="desc">Top-tier wireless earbuds.</div>
-<a class="button" href="https://www.amazon.com/dp/B0CHWRXH8S/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61Zr9ZQqQHL._AC_SL1500_.jpg" alt="Himalayan Salt Lamp" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Decor</span>
+          <div class="card-title">Himalayan Salt Lamp</div>
+          <p class="card-desc">Warm amber glow that transforms any room. A timeless bedroom or office aesthetic piece.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B002LZUE76/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/61BvxKspqkL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Reading</div>
-<div class="title">Kindle Paperwhite</div>
-<div class="desc">Best reading device ever.</div>
-<a class="button" href="https://www.amazon.com/dp/B09TMN58KL/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61Q7fJqb5NL._AC_SL1500_.jpg" alt="Hatch Restore 2" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Sleep</span>
+          <div class="card-title">Hatch Restore 2</div>
+          <p class="card-desc">Smart sleep machine, sunrise alarm, and reading light in one. Everyone who gets this swears by it for better mornings.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0C5S7K1JK/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/71g8b0QZqML._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Power</div>
-<div class="title">Anker Power Bank</div>
-<div class="desc">Reliable portable charging.</div>
-<a class="button" href="https://www.amazon.com/dp/B07S829LBX/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/81iWaKEaxuL._AC_SL1500_.jpg" alt="Cozy Throw Blanket" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Cozy</span>
+          <div class="card-title">Ultra-Soft Throw Blanket</div>
+          <p class="card-desc">The softest throw you'll ever own. Lightweight but warm — perfect draped on a couch or gifted in a basket.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B07YKXBW8Z/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-</div>
-</div>
+    </div>
+  </section>
 
-<!-- 4 -->
-<div class="section">
-<div class="section-title">🍳 Kitchen & Lifestyle</div>
-<div class="grid">
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/71pK0Q3ZK2L._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Kitchen</div>
-<div class="title">Air Fryer</div>
-<div class="desc">Fast healthy cooking.</div>
-<a class="button" href="https://www.amazon.com/dp/B07S6529ZZ/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+  <!-- ──── 3. TECH ──── -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-icon">📱</span>
+      <h2 class="section-title">Tech Essentials</h2>
+    </div>
+    <div class="grid">
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/61X1Z9ZqQHL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Beauty</div>
-<div class="title">Revlon One-Step Dryer</div>
-<div class="desc">Viral blowout brush.</div>
-<a class="button" href="https://www.amazon.com/dp/B01LSUQSB0/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61bhAJr7KfL._AC_SL1500_.jpg" alt="AirPods Pro 2" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Audio</span>
+          <div class="card-title">AirPods Pro 2</div>
+          <p class="card-desc">Best-in-class noise cancellation, spatial audio, and a transparency mode that actually works. The standard for wireless earbuds.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0CHWRXH8B/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://m.media-amazon.com/images/I/61Zb6g3QxQL._AC_SL1500_.jpg">
-<div class="content">
-<div class="tag">Fitness</div>
-<div class="title">Massage Gun</div>
-<div class="desc">Muscle recovery tool.</div>
-<a class="button" href="https://www.amazon.com/dp/B07Q1Z2X9T/?tag=acutedealsynd-20">View Deal</a>
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61BvxKspqkL._AC_SL1500_.jpg" alt="Kindle Paperwhite" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Reading</span>
+          <div class="card-title">Kindle Paperwhite</div>
+          <p class="card-desc">The best e-reader ever made. Waterproof, glare-free display, weeks of battery life. Readers never go back.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B09TMN58KL/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
-</div>
-</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71h0NMWPvgL._AC_SL1500_.jpg" alt="Apple Watch SE" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Wearable</span>
+          <div class="card-title">Apple Watch SE</div>
+          <p class="card-desc">All the essentials — fitness tracking, crash detection, heart rate monitoring — at the most accessible Apple Watch price.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0CHX9CY7W/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
 
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71g8b0QZqML._AC_SL1500_.jpg" alt="Anker Power Bank" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Power</span>
+          <div class="card-title">Anker 10,000mAh Power Bank</div>
+          <p class="card-desc">Trusted by millions. Charges two devices at once and fits in any bag. The reliable backup battery everyone needs.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0CZ9M6X8Q/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71sTqqLvaeL._AC_SL1500_.jpg" alt="Smart Plug" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Smart Home</span>
+          <div class="card-title">Kasa Smart Plug Mini</div>
+          <p class="card-desc">Control any lamp or appliance with your voice or phone. Set schedules, automations — plug in, done.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B091FXLMS8/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ──── 4. KITCHEN / FITNESS / LIFESTYLE ──── -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-icon">🍳</span>
+      <h2 class="section-title">Kitchen, Fitness &amp; Lifestyle</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71pK0Q3ZK2L._AC_SL1500_.jpg" alt="Ninja Air Fryer" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Kitchen</span>
+          <div class="card-title">Ninja 4-Qt Air Fryer</div>
+          <p class="card-desc">Crispy results with 75% less fat. Consistently Amazon's top kitchen best-seller — and for good reason.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B07S6529ZZ/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71Rz-XcxYgL._AC_SL1500_.jpg" alt="NutriBullet Blender" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Kitchen</span>
+          <div class="card-title">NutriBullet 900W Blender</div>
+          <p class="card-desc">Powerful enough for smoothies, frozen fruit, and protein shakes. Compact, easy to clean, always reliable.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0BZK4TZJ2/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71ZBVHbvbML._AC_SL1500_.jpg" alt="Zulay Milk Frother" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Coffee</span>
+          <div class="card-title">Zulay Milk Frother</div>
+          <p class="card-desc">Café-quality lattes and matcha at home. Amazon's #1 best-seller in milk frothers — under $15.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0CLYV3B94/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71V1tDYxEkL._AC_SL1500_.jpg" alt="Instant Pot Duo" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Kitchen</span>
+          <div class="card-title">Instant Pot Duo 7-in-1</div>
+          <p class="card-desc">Pressure cooker, slow cooker, rice cooker, sauté pan, and more. The kitchen workhorse that changed meal prep forever.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B00FLYWNYQ/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61yimD08fhL._AC_SL1500_.jpg" alt="Massage Gun" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Fitness</span>
+          <div class="card-title">Theragun Mini Massage Gun</div>
+          <p class="card-desc">Deep-tissue percussive therapy in a pocket-size device. Speeds up recovery, crushes soreness, travels anywhere.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0DV7JN7ZD/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61XbFvjbvRL._AC_SL1500_.jpg" alt="Walking Pad Treadmill" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Fitness</span>
+          <div class="card-title">Walking Pad Under-Desk Treadmill</div>
+          <p class="card-desc">Walk while you work. Slim, foldable, whisper-quiet. The WFH upgrade everyone is adding to their setup right now.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0GHGV75PF/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ──── 5. BEAUTY / SELF CARE ──── -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-icon">✨</span>
+      <h2 class="section-title">Beauty &amp; Self Care</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71TBiM7WNVL._AC_SL1500_.jpg" alt="LED Face Mask" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Skincare</span>
+          <div class="card-title">LED Light Therapy Face Mask</div>
+          <p class="card-desc">Dermatologist-loved red and blue light therapy at home. Reduces acne, boosts collagen, instantly looks spa-level luxe.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B0D7N2KWLH/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71s0Ot7FSSL._AC_SL1500_.jpg" alt="Jade Roller Set" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Skincare</span>
+          <div class="card-title">Jade Roller &amp; Gua Sha Set</div>
+          <p class="card-desc">The de-puffing duo that belongs on every vanity. Real jade, beautifully packaged, a forever giftable set.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B07WWC3T9Q/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/51zMVMHkFoL._AC_SL1500_.jpg" alt="Laneige Lip Mask" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Lip Care</span>
+          <div class="card-title">Laneige Lip Sleeping Mask</div>
+          <p class="card-desc">The cult lip mask that sells out constantly. Apply before bed, wake up with impossibly soft lips. Highly giftable.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B07XXPHQZK/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/61BxkFhY+aL._AC_SL1500_.jpg" alt="Hot Tools Curling Iron" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Hair</span>
+          <div class="card-title">Hot Tools 24K Gold Curling Iron</div>
+          <p class="card-desc">Professional-grade curls at home. Salon staple loved by stylists and YouTube creators alike for consistent, long-lasting waves.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B00176GSEI/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://m.media-amazon.com/images/I/71E8-oL+GUL._AC_SL1500_.jpg" alt="The Ordinary Skincare Set" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="tag">Skincare</span>
+          <div class="card-title">The Ordinary Daily Set</div>
+          <p class="card-desc">Science-backed skincare at a fraction of luxury prices. The go-to starter routine for glowy, even skin — endlessly reordered.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B07YPX9N6X/?tag=acutedealsynd-20" target="_blank" rel="nofollow noopener">View on Amazon</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</div><!-- /container -->
+
+
+<!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
 <footer>
-© 2026 Viral Amazon Gift Guide • Pinterest Affiliate Page
+  <p>© 2026 · All Amazon links are affiliate links. As an Amazon Associate I earn from qualifying purchases.</p>
+  <p style="margin-top:6px;">Prices and availability are accurate as of the date of publication and are subject to change.</p>
 </footer>
-
-</div>
 
 </body>
 </html>
